@@ -141,8 +141,7 @@
         }).addTo(map);
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
-            if (bounds_group.getLayers().length) {
-                map.fitBounds(bounds_group.getBounds());
+            map.setView([-25.5, 134], 4);
             }
         }
         map.createPane('pane_GoogleSatellite_0');
